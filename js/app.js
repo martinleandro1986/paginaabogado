@@ -14,9 +14,7 @@ menuBtn.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
 
-const navLinks = document.querySelectorAll(".nav a");
-
-navLinks.forEach((link) => {
+document.querySelectorAll(".nav a").forEach((link) => {
   link.addEventListener("click", () => {
     nav.classList.remove("active");
   });

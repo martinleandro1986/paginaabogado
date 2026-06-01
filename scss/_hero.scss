@@ -6,11 +6,11 @@
   overflow: hidden;
 
   background:
-    linear-gradient(
-      rgba(248, 244, 239, .82),
-      rgba(248, 244, 239, .94)
-    ),
-    url("../assets/img/cartel_matias.png") center center / 1100px no-repeat;
+  linear-gradient(
+    rgba(248, 244, 239, .76),
+    rgba(248, 244, 239, .90)
+  ),
+  url("../assets/img/cartel_matias.png") center center / 1120px no-repeat;
 
   &__overlay {
     position: absolute;
