@@ -1,16 +1,14 @@
 .header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  z-index: 50;
-  padding: 24px 0;
-  transition: 0.3s ease;
-
-  &.scrolled {
-    background: rgba(7, 17, 31, 0.92);
-    backdrop-filter: blur(18px);
-    padding: 14px 0;
-  }
+  z-index: 1000;
+  padding: 22px 0;
+  background: rgba(7, 17, 31, .94);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(201, 166, 107, .18);
+  transition: .3s ease;
 
   &__content {
     display: flex;
@@ -20,10 +18,9 @@
 }
 
 .logo {
-  color: $color-white;
   font-weight: 700;
+  color: $color-white;
   font-size: 1.15rem;
-  letter-spacing: 0.04em;
 
   span {
     color: $color-gold;
@@ -34,15 +31,33 @@
 
 .nav {
   display: flex;
+  align-items: center;
   gap: 34px;
 
   a {
-    color:#1b2330;;
-    font-size: 0.92rem;
-    transition: 0.3s;
+    color: rgba(255, 255, 255, .82);
+    font-size: .95rem;
+    font-weight: 500;
+    position: relative;
+    transition: .3s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 0;
+      height: 2px;
+      background: $color-gold;
+      transition: .3s ease;
+    }
 
     &:hover {
       color: $color-gold;
+    }
+
+    &:hover::after {
+      width: 100%;
     }
   }
 }
@@ -51,8 +66,9 @@
   display: none;
   background: none;
   border: 0;
-  color: white;
+  color: $color-white;
   font-size: 1.8rem;
+  cursor: pointer;
 }
 
 @media (max-width: 850px) {
@@ -66,14 +82,15 @@
 
   .nav {
     position: fixed;
-    top: 72px;
+    top: 78px;
     right: -100%;
     width: 78%;
-    height: calc(100vh - 72px);
+    height: calc(100vh - 78px);
     background: $color-dark;
     flex-direction: column;
-    padding: 40px;
-    transition: 0.3s ease;
+    align-items: flex-start;
+    padding: 42px;
+    transition: .3s ease;
 
     &.active {
       right: 0;
