@@ -90,18 +90,10 @@ p {
     transform: translateY(-2px);
   }
 
-&--outline{
-
-background:
-transparent;
-
-border:
-1px solid #1b2330;
-
-color:
-#1b2330;
-
-}
+  &--outline {
+    background: transparent;
+    border: 1px solid #1b2330;
+    color: #1b2330;
   }
 
   &--small {
@@ -109,6 +101,7 @@ color:
     font-size: 0.9rem;
   }
 }
+
 
 .section__header {
   max-width: 720px;
