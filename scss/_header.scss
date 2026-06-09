@@ -4,40 +4,60 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 22px 0;
-  background: rgba(7, 17, 31, .94);
-  backdrop-filter: blur(16px);
+  padding: 18px 0;
+  background: rgba(7, 17, 31, .88);
+  backdrop-filter: blur(18px);
   border-bottom: 1px solid rgba(201, 166, 107, .18);
-  transition: .3s ease;
+  transition: .35s ease;
+
+  &.scrolled {
+    padding: 12px 0;
+    background: rgba(7, 17, 31, .96);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, .16);
+  }
 
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 32px;
   }
 }
 
 .logo {
-  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
   color: $color-white;
-  font-size: 1.15rem;
 
   span {
-    color: $color-gold;
     font-family: $font-title;
+    color: $color-gold;
     font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+  }
+
+  small {
+    margin-top: 7px;
+    font-size: .68rem;
+    letter-spacing: .24em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .72);
+    font-weight: 700;
   }
 }
 
 .nav {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 28px;
+  margin-left: auto;
 
   a {
     color: rgba(255, 255, 255, .82);
-    font-size: .95rem;
-    font-weight: 500;
+    font-size: .9rem;
+    font-weight: 600;
     position: relative;
     transition: .3s ease;
 
@@ -45,7 +65,7 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -8px;
+      bottom: -9px;
       width: 0;
       height: 2px;
       background: $color-gold;
@@ -72,8 +92,12 @@
 }
 
 @media (max-width: 850px) {
-  .header .btn {
-    display: none;
+  .header {
+    padding: 14px 0;
+
+    .btn {
+      display: none;
+    }
   }
 
   .menu-btn {
@@ -82,11 +106,11 @@
 
   .nav {
     position: fixed;
-    top: 78px;
+    top: 72px;
     right: -100%;
     width: 78%;
-    height: calc(100vh - 78px);
-    background: $color-dark;
+    height: calc(100vh - 72px);
+    background: rgba(7, 17, 31, .98);
     flex-direction: column;
     align-items: flex-start;
     padding: 42px;
@@ -94,6 +118,10 @@
 
     &.active {
       right: 0;
+    }
+
+    a {
+      font-size: 1.05rem;
     }
   }
 }
