@@ -4,23 +4,23 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 18px 0;
-  background: rgba(7, 17, 31, .88);
+  padding: 16px 0;
+  background: rgba(7, 17, 31, .92);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid rgba(201, 166, 107, .18);
-  transition: .35s ease;
+  transition: .3s ease;
 
   &.scrolled {
-    padding: 12px 0;
-    background: rgba(7, 17, 31, .96);
-    box-shadow: 0 14px 40px rgba(0, 0, 0, .16);
+    padding: 10px 0;
+    background: rgba(7, 17, 31, .98);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, .18);
   }
 
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 32px;
+    gap: 28px;
   }
 }
 
@@ -28,34 +28,32 @@
   display: flex;
   flex-direction: column;
   line-height: 1;
-  color: $color-white;
 
   span {
     font-family: $font-title;
     color: $color-gold;
     font-size: 1.45rem;
     font-weight: 700;
-    letter-spacing: .02em;
   }
 
   small {
-    margin-top: 7px;
+    margin-top: 6px;
+    color: rgba(255, 255, 255, .72);
     font-size: .68rem;
+    font-weight: 700;
     letter-spacing: .24em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, .72);
-    font-weight: 700;
   }
 }
 
 .nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 26px;
   margin-left: auto;
 
   a {
-    color: rgba(255, 255, 255, .82);
+    color: rgba(255, 255, 255, .86);
     font-size: .9rem;
     font-weight: 600;
     position: relative;
@@ -65,7 +63,7 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -9px;
+      bottom: -8px;
       width: 0;
       height: 2px;
       background: $color-gold;
@@ -106,10 +104,10 @@
 
   .nav {
     position: fixed;
-    top: 72px;
+    top: 70px;
     right: -100%;
     width: 78%;
-    height: calc(100vh - 72px);
+    height: calc(100vh - 70px);
     background: rgba(7, 17, 31, .98);
     flex-direction: column;
     align-items: flex-start;
