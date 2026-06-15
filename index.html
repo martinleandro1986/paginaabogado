@@ -16,9 +16,12 @@
 
 <header class="header">
   <div class="container header__content">
-    <a href="#inicio" class="logo"><span>Matías</span> Settimo</a>
+    <a href="#inicio" class="logo">
+      <span>Matías Settimo</span>
+      <small>Abogado</small>
+    </a>
 
-    <nav class="nav">
+    <nav class="nav" id="nav">
       <a href="#inicio">Inicio</a>
       <a href="#areas">Áreas</a>
       <a href="#estudio">Estudio</a>
@@ -26,13 +29,16 @@
     </nav>
 
     <a href="#contacto" class="btn btn--small">Consultar</a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
   </div>
 </header>
 
 <main>
 
   <section class="hero" id="inicio">
-    <div class="container">
+    <div class="container hero__grid">
+
       <div class="hero__content">
         <span class="eyebrow">Matías Settimo · Abogado</span>
 
@@ -48,6 +54,11 @@
           <a href="#areas" class="btn btn--outline">Áreas de práctica</a>
         </div>
       </div>
+
+      <div class="hero__media">
+        <img src="./assets/img/cartel_matias.png" alt="Matías Settimo Abogado">
+      </div>
+
     </div>
   </section>
 
@@ -55,10 +66,10 @@
     <div class="container">
       <div class="section__header">
         <span class="eyebrow">Áreas de práctica</span>
-        <h2>Soluciones legales claras y personalizadas</h2>
+        <h2>Asesoramiento legal integral</h2>
         <p>
-          Asesoramiento jurídico orientado a prevenir conflictos, ordenar situaciones legales
-          y acompañar cada caso con una estrategia concreta.
+          Un abordaje profesional, claro y estratégico para resolver consultas, prevenir conflictos
+          y acompañar cada caso con seguimiento personalizado.
         </p>
       </div>
 
@@ -78,7 +89,7 @@
         <article class="service-card">
           <span>03</span>
           <h3>Derecho comercial</h3>
-          <p>Asesoramiento para empresas, comercios, acuerdos, documentación y prevención de conflictos.</p>
+          <p>Asesoramiento para empresas, comercios, documentación, acuerdos y prevención de conflictos.</p>
         </article>
       </div>
     </div>
@@ -86,20 +97,22 @@
 
   <section class="section study" id="estudio">
     <div class="container study__grid">
+
       <div class="study__image"></div>
 
       <div class="study__content">
         <span class="eyebrow">El estudio</span>
-        <h2>Atención directa, análisis serio y seguimiento del caso.</h2>
+
+        <h2>Atención directa, criterio profesional y compromiso.</h2>
 
         <p>
-          El objetivo es brindar respuestas claras, evaluar cada situación con criterio profesional
-          y acompañar al cliente durante todo el proceso.
+          El trabajo se orienta a brindar respuestas claras, analizar cada situación con seriedad
+          y diseñar una estrategia adecuada para cada caso.
         </p>
 
         <p>
-          Cada consulta se trabaja con confidencialidad, compromiso y una mirada estratégica
-          orientada a obtener la mejor solución posible.
+          La atención combina cercanía, confidencialidad y seguimiento, priorizando una comunicación
+          simple y ordenada durante todo el proceso.
         </p>
 
         <div class="stats">
@@ -107,12 +120,14 @@
             <strong>01</strong>
             <span>Atención personalizada</span>
           </div>
+
           <div>
             <strong>02</strong>
             <span>Estrategia jurídica</span>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -127,7 +142,7 @@
         <article class="process-card">
           <span>01</span>
           <h3>Consulta inicial</h3>
-          <p>Se analiza la situación y la documentación disponible.</p>
+          <p>Se analiza la situación planteada y la documentación disponible.</p>
         </article>
 
         <article class="process-card">
@@ -139,13 +154,13 @@
         <article class="process-card">
           <span>03</span>
           <h3>Estrategia</h3>
-          <p>Se define el abordaje más conveniente para el caso.</p>
+          <p>Se define el abordaje más conveniente para el caso concreto.</p>
         </article>
 
         <article class="process-card">
           <span>04</span>
           <h3>Seguimiento</h3>
-          <p>Se acompaña cada etapa con comunicación clara.</p>
+          <p>Se acompaña cada etapa con comunicación clara y ordenada.</p>
         </article>
       </div>
     </div>
@@ -163,6 +178,7 @@
 
   <section class="section contact" id="contacto">
     <div class="container contact__grid">
+
       <div>
         <span class="eyebrow">Contacto</span>
         <h2>Hablemos de tu caso</h2>
@@ -182,6 +198,7 @@
         <input type="text" placeholder="Nombre completo">
         <input type="email" placeholder="Correo electrónico">
         <input type="tel" placeholder="Teléfono">
+
         <select>
           <option>Motivo de consulta</option>
           <option>Derecho civil</option>
@@ -189,17 +206,28 @@
           <option>Derecho comercial</option>
           <option>Otro</option>
         </select>
+
         <textarea placeholder="Mensaje"></textarea>
+
         <button class="btn" type="submit">Enviar consulta</button>
       </form>
+
     </div>
   </section>
 
 </main>
 
-<a class="whatsapp" href="https://wa.me/5493410000000" target="_blank">
+<footer class="footer">
+  <div class="container footer__content">
+    <p>© 2026 <strong>Estudio Jurídico Matías Settimo</strong>. Todos los derechos reservados.</p>
+    <p>Rosario, Santa Fe · Asesoramiento legal integral</p>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5493413043751" target="_blank">
   WhatsApp
 </a>
 
+<script src="./js/app.js"></script>
 </body>
 </html>
