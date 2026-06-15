@@ -1,49 +1,61 @@
 .hero {
-  min-height: 92vh;
+  min-height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
+  background: $color-bg;
   overflow: hidden;
 
-  background:
-    linear-gradient(
-      rgba(248, 244, 239, .72),
-      rgba(248, 244, 239, .90)
-    ),
-    url("../assets/img/cartel_matias.png") center center / 1080px no-repeat;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(
+        circle at 82% 28%,
+        rgba(201, 166, 107, .22),
+        transparent 34%
+      );
+  }
 
   &__overlay {
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(
-        circle at 72% 32%,
-        rgba(201, 166, 107, .22),
-        transparent 38%
+      linear-gradient(
+        90deg,
+        rgba(248, 244, 239, .98),
+        rgba(248, 244, 239, .78)
       );
   }
 
-  &__content {
+  &__grid {
     position: relative;
     z-index: 2;
-    max-width: 760px;
+    display: grid;
+    grid-template-columns: 1fr .9fr;
+    gap: 70px;
+    align-items: center;
     padding-top: 110px;
+  }
+
+  &__content {
+    max-width: 720px;
 
     h1 {
       color: $color-dark;
-      margin-bottom: 24px;
-      font-size: clamp(3rem, 5.6vw, 5.4rem);
-      line-height: .96;
-      letter-spacing: -0.03em;
-      text-shadow: none;
+      font-size: clamp(3rem, 5.4vw, 5.8rem);
+      line-height: .95;
+      letter-spacing: -0.04em;
+      margin-bottom: 28px;
     }
 
     p {
       max-width: 610px;
-      color: #5d6675;
-      font-size: 1.08rem;
+      font-size: 1.1rem;
       line-height: 1.85;
-      margin-bottom: 34px;
+      color: #5d6675;
+      margin-bottom: 36px;
     }
   }
 
@@ -52,41 +64,89 @@
     gap: 16px;
     flex-wrap: wrap;
   }
-}
 
-@media (max-width: 900px) {
-  .hero {
-    min-height: 86vh;
+  &__visual {
+    position: relative;
+    min-height: 620px;
+  }
+
+  &__image {
+    position: absolute;
+    inset: 0;
+    border-radius: 34px;
     background:
       linear-gradient(
-        rgba(248, 244, 239, .82),
-        rgba(248, 244, 239, .96)
+        rgba(7, 17, 31, .12),
+        rgba(7, 17, 31, .42)
       ),
-      url("../assets/img/cartel_matias.png") center center / 820px no-repeat;
+      url("../assets/img/cartel_matias.png") center / cover no-repeat;
+    box-shadow: 0 34px 90px rgba(7, 17, 31, .22);
+  }
 
-    &__content {
-      padding-top: 130px;
+  &__badge {
+    position: absolute;
+    left: -34px;
+    bottom: 48px;
+    background: rgba(7, 17, 31, .94);
+    color: white;
+    padding: 24px 28px;
+    border-radius: 22px;
+    border: 1px solid rgba(201, 166, 107, .32);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, .25);
 
-      h1 {
-        font-size: clamp(2.8rem, 10vw, 4.8rem);
-      }
+    span {
+      display: block;
+      color: $color-gold;
+      font-size: .72rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    strong {
+      font-family: $font-title;
+      font-size: 1.35rem;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .hero {
+    min-height: auto;
+    padding: 120px 0 80px;
+
+    &__grid {
+      grid-template-columns: 1fr;
+      padding-top: 40px;
+    }
+
+    &__visual {
+      min-height: 440px;
+    }
+
+    &__badge {
+      left: 22px;
+      bottom: 22px;
     }
   }
 }
 
 @media (max-width: 620px) {
   .hero {
-    min-height: 86vh;
-    background:
-      linear-gradient(
-        rgba(248, 244, 239, .9),
-        rgba(248, 244, 239, .98)
-      ),
-      url("../assets/img/cartel_matias.png") center center / 620px no-repeat;
+    &__content {
+      h1 {
+        font-size: clamp(2.7rem, 12vw, 4.2rem);
+      }
+    }
 
     &__buttons {
       flex-direction: column;
       align-items: stretch;
+    }
+
+    &__visual {
+      min-height: 360px;
     }
   }
 }
