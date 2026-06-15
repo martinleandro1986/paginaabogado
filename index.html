@@ -1,100 +1,205 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matías Settimo | Abogado</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matías Settimo · Abogado</title>
 
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 
-  <header class="header">
-    <div class="container header__content">
-      <a href="#inicio" class="logo">Matías Settimo</a>
+<header class="header">
+  <div class="container header__content">
+    <a href="#inicio" class="logo"><span>Matías</span> Settimo</a>
 
-      <nav class="nav">
-        <a href="#inicio">Inicio</a>
-        <a href="#areas">Áreas</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </div>
-  </header>
+    <nav class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#areas">Áreas</a>
+      <a href="#estudio">Estudio</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="container hero__grid">
+    <a href="#contacto" class="btn btn--small">Consultar</a>
+  </div>
+</header>
 
-        <div class="hero__content">
-          <span class="eyebrow">Matías Settimo · Abogado</span>
+<main>
 
-          <h1>Asesoramiento legal con estrategia, claridad y compromiso.</h1>
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero__content">
+        <span class="eyebrow">Matías Settimo · Abogado</span>
 
-          <p>
-            Acompañamiento jurídico personalizado para personas y empresas, con atención directa,
-            análisis serio y seguimiento en cada etapa.
-          </p>
+        <h1>Asesoramiento legal con estrategia, claridad y compromiso.</h1>
 
-          <div class="hero__buttons">
-            <a href="#contacto" class="btn">Solicitar consulta</a>
-            <a href="#areas" class="btn btn--outline">Áreas de práctica</a>
-          </div>
+        <p>
+          Acompañamiento jurídico personalizado para personas y empresas, con atención directa,
+          análisis serio y seguimiento en cada etapa.
+        </p>
+
+        <div class="hero__buttons">
+          <a href="#contacto" class="btn">Solicitar consulta</a>
+          <a href="#areas" class="btn btn--outline">Áreas de práctica</a>
         </div>
-
-        <div class="hero__media">
-          <img src="./assets/img/cartel_matias.png" alt="Matías Settimo Abogado">
-        </div>
-
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="areas" id="areas">
-      <div class="container">
+  <section class="section intro" id="areas">
+    <div class="container">
+      <div class="section__header">
         <span class="eyebrow">Áreas de práctica</span>
         <h2>Soluciones legales claras y personalizadas</h2>
-
-        <div class="areas__grid">
-          <article class="area-card">
-            <h3>Derecho civil</h3>
-            <p>Reclamos, contratos, daños y perjuicios, responsabilidad civil y asesoramiento preventivo.</p>
-          </article>
-
-          <article class="area-card">
-            <h3>Derecho laboral</h3>
-            <p>Asistencia en conflictos laborales, acuerdos, indemnizaciones y asesoramiento integral.</p>
-          </article>
-
-          <article class="area-card">
-            <h3>Derecho comercial</h3>
-            <p>Contratos, gestión de conflictos, asesoramiento a empresas y prevención legal.</p>
-          </article>
-        </div>
+        <p>
+          Asesoramiento jurídico orientado a prevenir conflictos, ordenar situaciones legales
+          y acompañar cada caso con una estrategia concreta.
+        </p>
       </div>
-    </section>
 
-    <section class="contact" id="contacto">
-      <div class="container contact__content">
-        <div>
-          <span class="eyebrow">Contacto</span>
-          <h2>Solicitá una consulta</h2>
-          <p>
-            Contanos brevemente tu situación y te responderemos para coordinar una entrevista.
-          </p>
-        </div>
+      <div class="cards-grid">
+        <article class="service-card">
+          <span>01</span>
+          <h3>Derecho civil</h3>
+          <p>Contratos, reclamos, daños y perjuicios, responsabilidad civil y asesoramiento preventivo.</p>
+        </article>
 
-        <a href="https://wa.me/5493410000000" class="btn" target="_blank">
-          Escribir por WhatsApp
-        </a>
+        <article class="service-card">
+          <span>02</span>
+          <h3>Derecho laboral</h3>
+          <p>Asistencia en conflictos laborales, acuerdos, indemnizaciones y consultas de trabajadores o empleadores.</p>
+        </article>
+
+        <article class="service-card">
+          <span>03</span>
+          <h3>Derecho comercial</h3>
+          <p>Asesoramiento para empresas, comercios, acuerdos, documentación y prevención de conflictos.</p>
+        </article>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__content">
-      <p>© 2026 <strong>Estudio Jurídico Matías Settimo</strong>. Todos los derechos reservados.</p>
-      <p>Rosario, Santa Fe · Asesoramiento legal integral</p>
     </div>
-  </footer>
+  </section>
+
+  <section class="section study" id="estudio">
+    <div class="container study__grid">
+      <div class="study__image"></div>
+
+      <div class="study__content">
+        <span class="eyebrow">El estudio</span>
+        <h2>Atención directa, análisis serio y seguimiento del caso.</h2>
+
+        <p>
+          El objetivo es brindar respuestas claras, evaluar cada situación con criterio profesional
+          y acompañar al cliente durante todo el proceso.
+        </p>
+
+        <p>
+          Cada consulta se trabaja con confidencialidad, compromiso y una mirada estratégica
+          orientada a obtener la mejor solución posible.
+        </p>
+
+        <div class="stats">
+          <div>
+            <strong>01</strong>
+            <span>Atención personalizada</span>
+          </div>
+          <div>
+            <strong>02</strong>
+            <span>Estrategia jurídica</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section process">
+    <div class="container">
+      <div class="section__header">
+        <span class="eyebrow">Proceso de trabajo</span>
+        <h2>Una forma simple y ordenada de avanzar</h2>
+      </div>
+
+      <div class="process__grid">
+        <article class="process-card">
+          <span>01</span>
+          <h3>Consulta inicial</h3>
+          <p>Se analiza la situación y la documentación disponible.</p>
+        </article>
+
+        <article class="process-card">
+          <span>02</span>
+          <h3>Evaluación</h3>
+          <p>Se identifican riesgos, alternativas y posibles caminos de acción.</p>
+        </article>
+
+        <article class="process-card">
+          <span>03</span>
+          <h3>Estrategia</h3>
+          <p>Se define el abordaje más conveniente para el caso.</p>
+        </article>
+
+        <article class="process-card">
+          <span>04</span>
+          <h3>Seguimiento</h3>
+          <p>Se acompaña cada etapa con comunicación clara.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta">
+    <div class="container">
+      <div class="cta__box">
+        <h2>¿Necesitás asesoramiento legal?</h2>
+        <p>Coordiná una consulta para analizar tu situación con claridad.</p>
+        <a href="#contacto" class="btn">Solicitar consulta</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contacto">
+    <div class="container contact__grid">
+      <div>
+        <span class="eyebrow">Contacto</span>
+        <h2>Hablemos de tu caso</h2>
+
+        <p>
+          Escribinos para coordinar una consulta o enviar una breve descripción de la situación.
+        </p>
+
+        <ul>
+          <li><strong>Ubicación:</strong> Rosario, Santa Fe</li>
+          <li><strong>Atención:</strong> Presencial y virtual</li>
+          <li><strong>WhatsApp:</strong> +54 9 341 000 0000</li>
+        </ul>
+      </div>
+
+      <form class="contact__form">
+        <input type="text" placeholder="Nombre completo">
+        <input type="email" placeholder="Correo electrónico">
+        <input type="tel" placeholder="Teléfono">
+        <select>
+          <option>Motivo de consulta</option>
+          <option>Derecho civil</option>
+          <option>Derecho laboral</option>
+          <option>Derecho comercial</option>
+          <option>Otro</option>
+        </select>
+        <textarea placeholder="Mensaje"></textarea>
+        <button class="btn" type="submit">Enviar consulta</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<a class="whatsapp" href="https://wa.me/5493410000000" target="_blank">
+  WhatsApp
+</a>
 
 </body>
 </html>
