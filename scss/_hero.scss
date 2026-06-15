@@ -1,61 +1,52 @@
 .hero {
   min-height: 100vh;
-  position: relative;
+  background: $color-bg;
   display: flex;
   align-items: center;
-  background: $color-bg;
+  position: relative;
   overflow: hidden;
+  padding: 120px 0 70px;
 
   &::before {
     content: "";
     position: absolute;
-    inset: 0;
-    background:
-      radial-gradient(
-        circle at 82% 28%,
-        rgba(201, 166, 107, .22),
-        transparent 34%
-      );
-  }
-
-  &__overlay {
-    position: absolute;
-    inset: 0;
-    background:
-      linear-gradient(
-        90deg,
-        rgba(248, 244, 239, .98),
-        rgba(248, 244, 239, .78)
-      );
+    width: 620px;
+    height: 620px;
+    right: -180px;
+    top: 80px;
+    background: radial-gradient(
+      circle,
+      rgba(201, 166, 107, .22),
+      transparent 68%
+    );
   }
 
   &__grid {
     position: relative;
     z-index: 2;
     display: grid;
-    grid-template-columns: 1fr .9fr;
-    gap: 70px;
+    grid-template-columns: 1fr .88fr;
+    gap: 80px;
     align-items: center;
-    padding-top: 110px;
   }
 
   &__content {
     max-width: 720px;
 
     h1 {
+      font-size: clamp(3.2rem, 5.8vw, 6.4rem);
+      line-height: .92;
+      letter-spacing: -.045em;
       color: $color-dark;
-      font-size: clamp(3rem, 5.4vw, 5.8rem);
-      line-height: .95;
-      letter-spacing: -0.04em;
-      margin-bottom: 28px;
+      margin-bottom: 30px;
     }
 
     p {
-      max-width: 610px;
-      font-size: 1.1rem;
-      line-height: 1.85;
+      max-width: 600px;
+      font-size: 1.08rem;
+      line-height: 1.9;
       color: #5d6675;
-      margin-bottom: 36px;
+      margin-bottom: 38px;
     }
   }
 
@@ -65,48 +56,25 @@
     flex-wrap: wrap;
   }
 
-  &__visual {
+  &__media {
     position: relative;
-    min-height: 620px;
-  }
 
-  &__image {
-    position: absolute;
-    inset: 0;
-    border-radius: 34px;
-    background:
-      linear-gradient(
-        rgba(7, 17, 31, .12),
-        rgba(7, 17, 31, .42)
-      ),
-      url("../assets/img/cartel_matias.png") center / cover no-repeat;
-    box-shadow: 0 34px 90px rgba(7, 17, 31, .22);
-  }
-
-  &__badge {
-    position: absolute;
-    left: -34px;
-    bottom: 48px;
-    background: rgba(7, 17, 31, .94);
-    color: white;
-    padding: 24px 28px;
-    border-radius: 22px;
-    border: 1px solid rgba(201, 166, 107, .32);
-    box-shadow: 0 24px 60px rgba(0, 0, 0, .25);
-
-    span {
-      display: block;
-      color: $color-gold;
-      font-size: .72rem;
-      letter-spacing: .18em;
-      text-transform: uppercase;
-      font-weight: 800;
-      margin-bottom: 8px;
+    img {
+      width: 100%;
+      min-height: 620px;
+      object-fit: cover;
+      border-radius: 36px;
+      box-shadow: 0 36px 90px rgba(7, 17, 31, .24);
+      filter: contrast(1.04) saturate(.96);
     }
 
-    strong {
-      font-family: $font-title;
-      font-size: 1.35rem;
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 20px;
+      border: 1px solid rgba(201, 166, 107, .35);
+      border-radius: 28px;
+      pointer-events: none;
     }
   }
 }
@@ -118,25 +86,22 @@
 
     &__grid {
       grid-template-columns: 1fr;
-      padding-top: 40px;
+      gap: 50px;
     }
 
-    &__visual {
-      min-height: 440px;
-    }
-
-    &__badge {
-      left: 22px;
-      bottom: 22px;
+    &__media img {
+      min-height: 420px;
     }
   }
 }
 
 @media (max-width: 620px) {
   .hero {
+    padding-top: 110px;
+
     &__content {
       h1 {
-        font-size: clamp(2.7rem, 12vw, 4.2rem);
+        font-size: clamp(2.7rem, 12vw, 4.4rem);
       }
     }
 
@@ -145,8 +110,9 @@
       align-items: stretch;
     }
 
-    &__visual {
-      min-height: 360px;
+    &__media img {
+      min-height: 340px;
+      border-radius: 26px;
     }
   }
 }
