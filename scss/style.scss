@@ -5,3 +5,31 @@
 @import "sections";
 @import "contact";
 @import "footer";
+/* WHATSAPP MOBILE FIX */
+
+@media (max-width: 620px) {
+
+  .whatsapp {
+    width: 58px !important;
+    height: 58px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    right: 16px !important;
+    bottom: 16px !important;
+  }
+
+  .whatsapp::before {
+    content: "☎" !important;
+    display: block !important;
+    font-size: 1.4rem !important;
+  }
+
+  .whatsapp {
+    font-size: 0 !important;
+  }
+}
