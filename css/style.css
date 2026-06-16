@@ -176,60 +176,113 @@ p {
   }
 }
 .hero {
-  min-height: 100vh;
-  position: relative;
+  min-height: calc(100vh - 76px);
+  background: #f7f4ef;
   display: flex;
   align-items: center;
+  position: relative;
   overflow: hidden;
-  background: linear-gradient(rgba(248, 244, 239, 0.82), rgba(248, 244, 239, 0.94)), url("../assets/img/cartel_matias.png") center center/1100px no-repeat;
+  padding: 95px 0 75px;
 }
-.hero__overlay {
+
+.hero::before {
+  content: "";
   position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 75% 35%, rgba(201, 166, 107, 0.16), transparent 40%);
+  width: 520px;
+  height: 520px;
+  right: -170px;
+  top: 80px;
+  background: radial-gradient(circle, rgba(201, 166, 107, 0.18), transparent 68%);
+  pointer-events: none;
 }
-.hero__content {
+
+.hero__grid {
   position: relative;
   z-index: 2;
-  max-width: 780px;
-  padding-top: 120px;
+  display: grid;
+  grid-template-columns: 1fr 0.86fr;
+  gap: 70px;
+  align-items: center;
 }
+
+.hero__content {
+  max-width: 720px;
+}
+
 .hero__content h1 {
+  font-size: clamp(3.1rem, 5.5vw, 6rem);
+  line-height: 0.94;
+  letter-spacing: -0.045em;
   color: #07111f;
-  margin-bottom: 24px;
-  font-size: clamp(3rem, 6vw, 5.6rem);
-  line-height: 0.95;
-  text-shadow: none;
+  margin-bottom: 28px;
 }
+
 .hero__content p {
-  max-width: 650px;
-  color: #6b7280;
+  max-width: 610px;
   font-size: 1.08rem;
   line-height: 1.9;
+  color: #5d6675;
   margin-bottom: 36px;
 }
+
 .hero__buttons {
   display: flex;
-  gap: 18px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
-@media (max-width: 900px) {
+.hero__media {
+  background: #05070b;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 36px 90px rgba(7, 17, 31, 0.28);
+}
+
+.hero__media img {
+  width: 100%;
+  height: 610px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  filter: contrast(1.04) saturate(0.96);
+}
+
+@media (max-width: 950px) {
   .hero {
-    background: linear-gradient(rgba(248, 244, 239, 0.86), rgba(248, 244, 239, 0.96)), url("../assets/img/cartel_matias.png") center center/850px no-repeat;
+    min-height: auto;
+    padding: 105px 0 75px;
   }
-  .hero__content {
-    padding-top: 140px;
+
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .hero__media img {
+    height: 430px;
   }
 }
+
 @media (max-width: 620px) {
   .hero {
-    min-height: 90vh;
-    background: linear-gradient(rgba(248, 244, 239, 0.9), rgba(248, 244, 239, 0.98)), url("../assets/img/cartel_matias.png") center center/650px no-repeat;
+    padding-top: 95px;
   }
+
+  .hero__content h1 {
+    font-size: clamp(2.7rem, 12vw, 4.3rem);
+  }
+
   .hero__buttons {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .hero__media {
+    border-radius: 24px;
+  }
+
+  .hero__media img {
+    height: 340px;
   }
 }
 .intro {
