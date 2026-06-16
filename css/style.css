@@ -940,3 +940,54 @@ p {
     font-size: .9rem;
   }
 }
+
+/* =========================
+   ANIMACIONES PREMIUM
+========================= */
+
+.hero__content,
+.hero__media,
+.service-card,
+.study__image,
+.study__content,
+.process-card,
+.cta__box,
+.contact__grid {
+  animation: fadeUp .75s ease both;
+}
+
+.hero__media {
+  animation-delay: .12s;
+}
+
+.service-card:nth-child(2) {
+  animation-delay: .08s;
+}
+
+.service-card:nth-child(3) {
+  animation-delay: .16s;
+}
+
+.process-card:nth-child(2) {
+  animation-delay: .08s;
+}
+
+.process-card:nth-child(3) {
+  animation-delay: .16s;
+}
+
+.process-card:nth-child(4) {
+  animation-delay: .24s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
