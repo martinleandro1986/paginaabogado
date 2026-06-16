@@ -481,44 +481,86 @@ p {
 }
 
 .study {
-  background: #07111f;
+  background:
+    radial-gradient(circle at 82% 20%, rgba(201, 166, 107, .12), transparent 28%),
+    #07111f;
+  position: relative;
+  overflow: hidden;
 }
+
 .study__grid {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 70px;
+  grid-template-columns: .95fr 1.05fr;
+  gap: 76px;
   align-items: center;
 }
+
 .study__image {
-  min-height: 560px;
-  border-radius: 22px;
-  background: linear-gradient(rgba(7, 17, 31, 0.1), rgba(7, 17, 31, 0.42)), url("../assets/img/estatua-justicia.png") center/cover no-repeat;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.12);
+  min-height: 600px;
+  border-radius: 28px;
+  background:
+    linear-gradient(rgba(7, 17, 31, .10), rgba(7, 17, 31, .38)),
+    url("../assets/img/estatua-justicia.png") center/cover no-repeat;
+  box-shadow: 0 32px 90px rgba(0, 0, 0, .28);
+  border: 1px solid rgba(201, 166, 107, .18);
 }
+
 .study__content h2 {
   color: #ffffff;
   margin-bottom: 28px;
+  font-size: clamp(2.5rem, 4vw, 4.4rem);
 }
+
 .study__content p {
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, .74);
   margin-bottom: 20px;
+  font-size: 1.04rem;
+  line-height: 1.9;
 }
 
 .stats {
   display: flex;
-  gap: 50px;
-  margin-top: 40px;
+  gap: 44px;
+  margin-top: 44px;
+  padding-top: 34px;
+  border-top: 1px solid rgba(255, 255, 255, .10);
 }
+
 .stats strong {
   display: block;
   color: #c9a66b;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-family: "Playfair Display", serif;
-}
-.stats span {
-  color: rgba(255, 255, 255, 0.75);
+  line-height: 1;
+  margin-bottom: 10px;
 }
 
+.stats span {
+  color: rgba(255, 255, 255, .78);
+}
+
+@media (max-width: 950px) {
+  .study__grid {
+    grid-template-columns: 1fr;
+    gap: 46px;
+  }
+
+  .study__image {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 620px) {
+  .study__image {
+    min-height: 340px;
+    border-radius: 22px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
 .process {
   background: #ffffff;
 }
