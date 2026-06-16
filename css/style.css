@@ -104,17 +104,15 @@ p {
 }
 
 .header {
-  position: fixed;
+  background: #0d1a2a !important;
+  position: sticky;
   top: 0;
-  width: 100%;
-  z-index: 50;
-  padding: 24px 0;
-  transition: 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .18);
 }
 .header.scrolled {
-  background: rgba(7, 17, 31, 0.92);
-  backdrop-filter: blur(18px);
-  padding: 14px 0;
+  background: #0d1a2a !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .18);
 }
 .header__content {
   display: flex;
