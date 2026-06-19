@@ -1023,3 +1023,35 @@ p {
     font-size: 1.15rem;
   }
 }
+
+@media (max-width: 620px) {
+  .whatsapp {
+    position: fixed !important;
+    right: 16px !important;
+    bottom: 16px !important;
+    width: 58px !important;
+    height: 58px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 99999 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background: #25d366 !important;
+    color: #fff !important;
+    font-size: 0 !important;
+  }
+
+  .whatsapp strong,
+  .whatsapp span {
+    display: none !important;
+  }
+
+  .whatsapp::before {
+    content: "☎" !important;
+    font-size: 1.45rem !important;
+    display: block !important;
+  }
+}
