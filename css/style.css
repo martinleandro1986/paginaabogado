@@ -335,7 +335,7 @@ p {
   position: relative;
   overflow: hidden;
   background: #ffffff;
-  padding: 42px 38px;
+  padding: 38px 30px;
   border-radius: 26px;
   min-height: 280px;
   border: 1px solid rgba(201, 166, 107, .20);
@@ -469,7 +469,7 @@ p {
 .process-card {
   position: relative;
   background: #ffffff;
-  padding: 34px 28px;
+  padding: 38px 30px;
   border-radius: 22px;
   border: 1px solid rgba(201, 166, 107, .20);
   box-shadow: 0 16px 46px rgba(7, 17, 31, .06);
@@ -775,8 +775,8 @@ p {
 }
 
   .hero__content p {
-  font-size: 1.15rem;
-  line-height: 1.8;
+  font-size: 1.25rem;
+  line-height: 1.9;
   }
 
   .hero__buttons {
@@ -817,8 +817,8 @@ p {
   .study__content p,
   .contact p,
   .contact li {
-    font-size: 1.05rem;
-    line-height: 1.8;
+    font-size: 1.15rem;
+    line-height: 1.9;
   }
 
   .service-card,
@@ -829,7 +829,7 @@ p {
 
   .service-card h3,
   .process-card h3 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .study__image {
@@ -901,12 +901,12 @@ p {
   }
 
   .logo span {
-    font-size: 1.45rem;
+    font-size: 1.35rem;
   }
 
   .logo small {
-    font-size: .72rem;
-    letter-spacing: .2em;
+    font-size: .68rem;
+    
   }
 
   .menu-btn {
@@ -918,8 +918,8 @@ p {
   }
 
   .hero__content h1 {
-    font-size: clamp(3.35rem, 12vw, 4.8rem);
-    line-height: .95;
+    font-size: clamp(3rem, 10.5vw, 4.2rem);
+    line-height: .98;
   }
 
   .hero__content p,
@@ -929,7 +929,7 @@ p {
   .study__content p,
   .contact p,
   .contact li {
-    font-size: 1.18rem;
+    font-size: 1.12rem;
     line-height: 1.85;
   }
 
