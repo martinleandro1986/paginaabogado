@@ -961,3 +961,80 @@ p {
     height: 260px;
   }
 }
+
+/* MOBILE ESCALA GRANDE */
+
+@media (max-width: 768px) {
+  .container {
+    width: 94%;
+  }
+
+  .header__content {
+    min-height: 82px;
+  }
+
+  .logo span {
+    font-size: 1.75rem;
+  }
+
+  .logo small {
+    font-size: .82rem;
+  }
+
+  .menu-btn {
+    font-size: 2.7rem;
+  }
+
+  .eyebrow {
+    font-size: 1rem;
+    letter-spacing: .14em;
+  }
+
+  .hero__content h1 {
+    font-size: clamp(3.7rem, 12.5vw, 5rem);
+    line-height: .95;
+    letter-spacing: -.045em;
+  }
+
+  .hero__content p {
+    font-size: 1.4rem;
+    line-height: 1.85;
+  }
+
+  .section__header h2,
+  .study__content h2,
+  .contact h2,
+  .cta__box h2 {
+    font-size: clamp(3.5rem, 11.5vw, 4.8rem);
+    line-height: .98;
+  }
+
+  .section__header p,
+  .service-card p,
+  .process-card p,
+  .study__content p,
+  .contact p,
+  .contact li {
+    font-size: 1.32rem;
+    line-height: 1.85;
+  }
+
+  .service-card h3,
+  .process-card h3 {
+    font-size: 2.35rem;
+  }
+
+  .service-card span,
+  .process-card span {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    min-height: 66px;
+    font-size: 1.15rem;
+  }
+
+  .hero__media img {
+    height: 240px;
+  }
+}
