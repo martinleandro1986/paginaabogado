@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://paginaabogado.vercel.app/sitemap.xml
