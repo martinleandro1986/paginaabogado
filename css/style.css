@@ -33,7 +33,6 @@ img {
   width: min(92%, 1180px);
   margin: 0 auto;
 }
-
 .section {
   padding: 110px 0;
 }
@@ -721,9 +720,9 @@ p {
 
 @media (max-width: 1100px) {
   .container {
-    width: min(92%, 520px);
+    width: min(92%, 720px);
   }
-
+  
   .header__content {
     min-height: 68px;
   }
@@ -769,9 +768,9 @@ p {
     gap: 36px;
   }
 
-  .hero__content h1 {
-    font-size: clamp(3rem, 10vw, 4.2rem);
-    line-height: 1;
+ .hero__content h1 {
+  font-size: clamp(2.8rem, 8vw, 3.8rem);
+  line-height: 1.03;
   }
 
   .hero__content p {
