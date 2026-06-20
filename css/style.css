@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -312,8 +317,8 @@ p {
   .nav {
     position: fixed;
     top: 76px;
-    right: -100%;
-    width: 78%;
+    right: 0;
+    width: min(82vw, 320px);
     height: calc(100vh - 76px);
     background: #0d1a2a;
     flex-direction: column;
@@ -321,14 +326,16 @@ p {
     justify-content: flex-start;
     gap: 24px;
     padding: 40px;
-    transition: right .3s ease;
     box-shadow: -16px 0 40px rgba(0, 0, 0, .25);
+    transform: translateX(110%);
+    transition: transform .3s ease;
+    z-index: 9998;
   }
 
   .nav.active {
-    right: 0;
+    transform: translateX(0);
   }
-
+}
   .hero {
     min-height: auto;
     padding: 105px 0 75px;
