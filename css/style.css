@@ -1038,3 +1038,50 @@ p {
     height: 240px;
   }
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 19px !important;
+  }
+
+  .logo span {
+    font-size: 1.9rem !important;
+  }
+
+  .logo small {
+    font-size: .85rem !important;
+  }
+
+  .hero__content h1 {
+    font-size: 4.25rem !important;
+    line-height: .95 !important;
+  }
+
+  .hero__content p,
+  .section__header p,
+  .service-card p,
+  .process-card p,
+  .study__content p,
+  .contact p,
+  .contact li {
+    font-size: 1.35rem !important;
+    line-height: 1.85 !important;
+  }
+
+  .section__header h2,
+  .study__content h2,
+  .contact h2,
+  .cta__box h2 {
+    font-size: 3.75rem !important;
+  }
+
+  .service-card h3,
+  .process-card h3 {
+    font-size: 2.45rem !important;
+  }
+
+  .btn {
+    font-size: 1.2rem !important;
+    min-height: 70px !important;
+  }
+}
