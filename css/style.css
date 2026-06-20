@@ -1099,3 +1099,141 @@ p {
     display: block !important;
   }
 }
+
+/* =========================
+   MOBILE REAL FIX
+========================= */
+
+@media (max-width: 768px) {
+  .container {
+    width: min(92%, 430px);
+  }
+
+  .header__content {
+    min-height: 68px;
+  }
+
+  .logo span {
+    font-size: 1.15rem;
+  }
+
+  .logo small {
+    font-size: .58rem;
+    letter-spacing: .18em;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header .btn {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 70px 0 58px;
+  }
+
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .hero__content h1 {
+    font-size: 2.75rem;
+    line-height: .98;
+    letter-spacing: -.035em;
+  }
+
+  .hero__content p {
+    font-size: 1.02rem;
+    line-height: 1.75;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__media {
+    border-radius: 24px;
+  }
+
+  .hero__media img {
+    height: 280px;
+    padding: 14px;
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .section__header {
+    margin-bottom: 36px;
+  }
+
+  .section__header h2,
+  .study__content h2,
+  .contact h2,
+  .cta__box h2 {
+    font-size: 2.35rem;
+    line-height: 1.08;
+  }
+
+  .section__header p,
+  .study__content p,
+  .contact p,
+  .contact li {
+    font-size: 1rem;
+  }
+
+  .cards-grid,
+  .process__grid,
+  .study__grid,
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card,
+  .process-card {
+    padding: 30px 26px;
+    min-height: auto;
+  }
+
+  .service-card h3,
+  .process-card h3 {
+    font-size: 1.45rem;
+  }
+
+  .study__image {
+    min-height: 300px;
+    border-radius: 22px;
+  }
+
+  .cta__box {
+    padding: 48px 24px;
+    border-radius: 24px;
+  }
+
+  .contact__form {
+    padding: 28px 22px;
+  }
+
+  .whatsapp {
+    width: 58px !important;
+    height: 58px !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    right: 16px !important;
+    bottom: 16px !important;
+  }
+
+  .whatsapp strong {
+    display: none !important;
+  }
+}
