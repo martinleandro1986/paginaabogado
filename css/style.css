@@ -966,3 +966,15 @@ p {
     height: 240px;
   }
 }
+@media (max-width: 768px) {
+  .hero__content p,
+  .section__header p,
+  .service-card p,
+  .process-card p,
+  .study__content p,
+  .contact p,
+  .contact li {
+    text-align: justify;
+    text-wrap: pretty;
+  }
+}
