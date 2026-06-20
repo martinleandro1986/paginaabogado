@@ -717,7 +717,7 @@ p {
   }
 }
 
-/* RESPONSIVE TABLET / MOBILE */
+/* RESPONSIVE TABLET */
 
 @media (max-width: 1100px) {
   .container {
@@ -778,13 +778,13 @@ p {
   }
 
   .hero__content h1 {
-    font-size: clamp(3rem, 9.5vw, 4.1rem);
-    line-height: .98;
+    font-size: clamp(2.8rem, 8.2vw, 3.7rem);
+    line-height: 1.02;
   }
 
   .hero__content p {
-    font-size: 1.2rem;
-    line-height: 1.9;
+    font-size: 1.12rem;
+    line-height: 1.85;
   }
 
   .hero__buttons {
@@ -815,8 +815,8 @@ p {
   .study__content h2,
   .contact h2,
   .cta__box h2 {
-    font-size: clamp(2.5rem, 8vw, 3.3rem);
-    line-height: 1.05;
+    font-size: clamp(2.25rem, 7vw, 3rem);
+    line-height: 1.08;
   }
 
   .section__header p,
@@ -825,24 +825,24 @@ p {
   .study__content p,
   .contact p,
   .contact li {
-    font-size: 1.12rem;
-    line-height: 1.9;
+    font-size: 1.05rem;
+    line-height: 1.85;
   }
 
   .service-card,
   .process-card {
-    padding: 36px 30px;
+    padding: 34px 28px;
     min-height: auto;
   }
 
   .service-card span,
   .process-card span {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .service-card h3,
   .process-card h3 {
-    font-size: 2rem;
+    font-size: 1.65rem;
   }
 
   .study__image {
@@ -892,77 +892,7 @@ p {
   }
 }
 
-/* AJUSTE FINO MOBILE */
-
-@media (max-width: 768px) {
-  .header__content {
-    min-height: 78px;
-  }
-
-  .logo span {
-    font-size: 1.55rem;
-  }
-
-  .logo small {
-    font-size: .78rem;
-  }
-
-  .menu-btn {
-    font-size: 2.4rem;
-  }
-
-  .eyebrow {
-    font-size: .88rem;
-  }
-
-  .hero {
-    padding-top: 55px;
-  }
-
-  .hero__content h1 {
-    font-size: clamp(3.25rem, 11vw, 4.5rem);
-    line-height: .96;
-  }
-
-  .hero__content p {
-    font-size: 1.25rem;
-    line-height: 1.9;
-  }
-
-  .section__header p,
-  .service-card p,
-  .process-card p,
-  .study__content p,
-  .contact p,
-  .contact li {
-    font-size: 1.18rem;
-    line-height: 1.9;
-  }
-
-  .section__header h2,
-  .study__content h2,
-  .contact h2,
-  .cta__box h2 {
-    font-size: clamp(3rem, 10vw, 4.2rem);
-    line-height: 1;
-  }
-
-  .service-card h3,
-  .process-card h3 {
-    font-size: 2.15rem;
-  }
-
-  .btn {
-    min-height: 60px;
-    font-size: 1.08rem;
-  }
-
-  .hero__media img {
-    height: 260px;
-  }
-}
-
-/* MOBILE ESCALA GRANDE */
+/* RESPONSIVE MOBILE */
 
 @media (max-width: 768px) {
   .container {
@@ -982,105 +912,57 @@ p {
   }
 
   .menu-btn {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
   }
 
   .eyebrow {
-    font-size: 1rem;
+    font-size: .9rem;
     letter-spacing: .14em;
   }
 
- .hero__content h1 {
-  font-size: clamp(2.9rem, 9.2vw, 3.7rem) !important;
-  line-height: 1.02 !important;
-}
-
-  .hero__content p {
-    font-size: 1.4rem;
-    line-height: 1.85;
-  }
-
-.section__header h2,
-.study__content h2,
-.contact h2,
-.cta__box h2 {
-  font-size: clamp(2.5rem, 8.3vw, 3.3rem) !important;
-  line-height: 1.05 !important;
-}
-
-  .section__header p,
-  .service-card p,
-  .process-card p,
-  .study__content p,
-  .contact p,
-  .contact li {
-    font-size: 1.32rem;
-    line-height: 1.85;
-  }
-
- .service-card h3,
- .process-card h3 {
-  font-size: 1.85rem !important;
-}
-
-  .service-card span,
-  .process-card span {
-    font-size: 1.25rem;
-  }
-
-  .btn {
-    min-height: 66px;
-    font-size: 1.15rem;
-  }
-
-  .hero__media img {
-    height: 240px;
-  }
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: 19px !important;
-  }
-
-  .logo span {
-    font-size: 1.9rem !important;
-  }
-
-  .logo small {
-    font-size: .85rem !important;
+  .hero {
+    padding-top: 55px;
   }
 
   .hero__content h1 {
-    font-size: 4.25rem !important;
-    line-height: .95 !important;
+    font-size: clamp(2.45rem, 7.6vw, 3.05rem);
+    line-height: 1.06;
   }
 
-  .hero__content p,
-  .section__header p,
-  .service-card p,
-  .process-card p,
-  .study__content p,
-  .contact p,
-  .contact li {
-    font-size: 1.35rem !important;
-    line-height: 1.85 !important;
+  .hero__content p {
+    font-size: 1.12rem;
+    line-height: 1.8;
   }
 
   .section__header h2,
   .study__content h2,
   .contact h2,
   .cta__box h2 {
-    font-size: 3.75rem !important;
+    font-size: clamp(2rem, 6.5vw, 2.55rem);
+    line-height: 1.1;
+  }
+
+  .section__header p,
+  .service-card p,
+  .process-card p,
+  .study__content p,
+  .contact p,
+  .contact li {
+    font-size: 1.02rem;
+    line-height: 1.8;
   }
 
   .service-card h3,
   .process-card h3 {
-    font-size: 2.45rem !important;
+    font-size: 1.55rem;
   }
 
   .btn {
-    font-size: 1.2rem !important;
-    min-height: 70px !important;
+    min-height: 58px;
+    font-size: 1rem;
+  }
+
+  .hero__media img {
+    height: 240px;
   }
 }
